@@ -1,5 +1,6 @@
 # 🌊 WaveAnimationView
 
+[![](https://jitpack.io/v/mouhsineAf/circleripplewaveanimation.svg)](https://jitpack.io/#mouhsineAf/circleripplewaveanimation)
 
 A simple, elegant, and customizable **Wave Animation View** for Android. This view renders animated waveforms that can be used for decorative UI components, music visualizations, splash screens, loading animations, or any creative fluid effects in your app.
 
@@ -41,7 +42,7 @@ dependencyResolutionManagement {
 
 ```groovy
 dependencies {
-    implementation 'com.github.mouhsineAf:waveanimationview:1.0.0'
+    implementation 'com.github.mouhsineAf:circleripplewaveanimation:1.0.0'
 }
 ```
 
@@ -52,14 +53,13 @@ dependencies {
 ### XML Integration
 
 ```xml
-<com.devm22.waveanimationview.WaveAnimationView
+<com.devm22.circleripplewaveanimation.CircleRippleWaveView
     android:id="@+id/waveView"
-    android:layout_width="match_parent"
+    android:layout_width="200dp"
     android:layout_height="200dp"
-    android:layout_marginTop="20dp"
     app:mainWaveColor="#3F51B5"
     app:waveCount="3"
-    app:animationSpeed="2"
+    app:animationSpeed="800"
     app:centerText="Loading"
     app:centerTextColor="#FFFFFF"
     app:centerTextSize="18sp"
@@ -83,7 +83,7 @@ waveView.setMainWaveColor(Color.parseColor("#FF4081"));
 
 // Customize wave appearance and speed
 waveView.setWaveCount(4);         // Number of waveforms
-waveView.setAnimationSpeed(3);    // Wave animation speed
+waveView.setAnimationSpeed(800);    // Wave animation speed
 
 // Optional: Set center text or image dynamically
 waveView.setCenterText("Syncing");
@@ -101,7 +101,7 @@ val waveView = findViewById<WaveAnimationView>(R.id.waveView)
 
 waveView.setMainWaveColor(Color.parseColor("#FF4081"))
 waveView.setWaveCount(4)
-waveView.setAnimationSpeed(3)
+waveView.setAnimationSpeed(800)
 
 waveView.setCenterText("Syncing")
 waveView.setCenterTextColor(Color.WHITE)
