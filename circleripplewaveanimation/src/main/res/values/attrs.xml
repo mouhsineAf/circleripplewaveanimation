@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaveAnimationView">
+        <attr name="waveCount" format="integer" />
+        <attr name="mainWaveColor" format="color" />
+        <attr name="animationSpeed" format="integer" />
+        <attr name="centerText" format="string"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="centerTextSize" format="dimension"/>
+        <attr name="textAllCaps" format="boolean" />
+        <attr name="centerImage" format="reference" />
+        <attr name="centerImagePadding" format="dimension" />
+        <attr name="centerImageTint" format="color" />
+
+        <attr name="textStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+
+    </declare-styleable>
+
+
+</resources>
